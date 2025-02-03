@@ -1,0 +1,142 @@
+:root {
+  --white-color: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  "Outfit", sans-serif;
+  font-size: 16px;
+  background-color: var(--stone-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 3rem 0;
+}
+
+.container {
+  background-color: var(--white-color);
+  width: 40.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.container .image {
+  border-radius: 1rem;
+}
+
+.container .image img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.container .info {
+  margin-bottom: 1.25rem;
+}
+.container .info p {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.container .pre-time {
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background-color: var(--rose-50);
+}
+
+.container .pre-time h3 {
+  color: var(--rose-800);
+}
+.container .pre-time ul li::marker {
+  color: var(--rose-800);
+}
+.container .pre-time ul li {
+  padding-left: 1.25rem;
+  color: #8e8e8e;
+}
+.container .pre-time ul li span {
+  font-weight: 600;
+  color: #5e5e5e;
+}
+
+.container .ingredients h2 {
+  color: var(--brown-800);
+}
+.container .ingredients ul li::marker {
+  color: var(--brown-800);
+}
+.container .ingredients ul li {
+  padding-left: 1.25rem;
+  color: #8e8e8e;
+}
+
+.container .instructions h2 {
+  color: var(--brown-800);
+}
+.container .instructions ol li::marker {
+  color: var(--brown-800);
+  font-weight: bold;
+}
+.container .instructions ol li {
+  padding-left: 1.25rem;
+  color: #8e8e8e;
+}
+.container .instructions ol li span {
+  font-weight: 600;
+  color: #5e5e5e;
+}
+
+.container .nutrition h2 {
+  color: var(--brown-800);
+}
+.container .nutrition p {
+  color: #8e8e8e;
+}
+.container .nutrition ul {
+  list-style: none;
+  padding: 0;
+}
+.container .nutrition ul li {
+  color: #8e8e8e;
+  border-bottom: 1px solid #ddd;
+  padding: 0.6rem 0 0.6rem 1.25rem;
+  position: relative;
+}
+.container .nutrition ul li span {
+  font-weight: 600;
+  color: var(--brown-800);
+  position: absolute;
+  left: 50%;
+}
+
+@media (max-width: 36rem) {
+  body {
+    background-color: transparent;
+    padding: 0;
+  }
+  .container {
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  .container .image {
+    border-radius: none;
+    margin: 0;
+  } 
+  .container .image img {
+    border-radius: 0;
+  }
+  .page {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
